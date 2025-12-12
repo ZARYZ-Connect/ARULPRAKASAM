@@ -1,0 +1,354 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%);
+    padding: 50px 30px 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header h1 {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.header .title {
+    font-size: 1.1em;
+    opacity: 0.95;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.logo-container {
+    margin: 15px auto;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Quick Action Buttons */
+.quick-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.action-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+}
+
+/* Content Sections */
+.content {
+    background: white;
+    padding: 0;
+}
+
+.section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+/* Section Title */
+.section-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.section-title i {
+    width: 35px;
+    height: 35px;
+    background: #1e3c72;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 0.8em;
+}
+
+/* Contact Items */
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-label {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-value {
+    font-size: 1.05em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.contact-value a {
+    color: #721e1e;
+    text-decoration: none;
+}
+
+.contact-value a:hover {
+    text-decoration: underline;
+}
+
+/* Bio Items */
+.bio-item {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.bio-label {
+    font-weight: 600;
+    color: #1e3c72;
+    min-width: 140px;
+}
+
+.bio-value {
+    color: #333;
+}
+
+.bio-value a {
+    color: #1e3c72;
+    text-decoration: none;
+}
+
+/* Profession Cards */
+.profession-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 4px solid #1e3c72;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profession-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.profession-title {
+    font-weight: 700;
+    color: #1e3c72;
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.profession-detail {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Experience Text */
+.experience-text {
+    color: #333;
+    line-height: 1.8;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    background: #fff3cd;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Social Links */
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 12px;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.social-link:hover {
+    background: white;
+    border-color: #1e3c72;
+    transform: translateX(5px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+.instagram-icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.website-icon {
+    background: #1e3c72;
+    color: white;
+}
+
+.social-text h4 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.social-text p {
+    font-size: 0.85em;
+    color: #888;
+}
+
+.arrow {
+    margin-left: auto;
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 520px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    body {
+        padding: 0;
+        background: #f5f5f5;
+    }
+
+    .header {
+        padding: 40px 20px 25px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header .title {
+        font-size: 1em;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section {
+        padding: 20px 20px;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+    }
+
+    .bio-label {
+        min-width: 120px;
+        font-size: 0.9em;
+    }
+
+    .bio-item {
+        font-size: 0.9em;
+    }
+
+    .action-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 1.6em;
+    }
+
+    .bio-label {
+        min-width: 110px;
+    }
+
+    .profession-card {
+        padding: 12px;
+    }
+}
